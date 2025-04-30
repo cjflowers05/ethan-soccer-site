@@ -3,59 +3,21 @@
 <head>
   <meta charset="UTF-8" />
   <title>Ethan F. | Soccer Highlights</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
   <style>
-    body {
-      margin: 0;
-      font-family: 'Poppins', sans-serif;
-      background: #121212;
-      color: #fff;
-    }
-    header, footer {
-      background: #1f1f1f;
-      text-align: center;
-      padding: 1rem;
-    }
-    .container {
-      max-width: 900px;
-      margin: auto;
-      padding: 1rem;
-    }
-    .profile-pics {
-      display: flex;
-      justify-content: center;
-      gap: 1rem;
-    }
-    .profile-pics img {
-      width: 200px;
-      border-radius: 12px;
-      border: 2px solid #00ff7f;
-    }
-    .bio {
-      background: #1e1e1e;
-      padding: 1rem;
-      border-radius: 12px;
-      margin: 1rem 0;
-    }
-    .game-card {
-      background: #222;
-      padding: 1rem;
-      margin: 0.5rem 0;
-      border-left: 5px solid #00ff7f;
-      border-radius: 6px;
-    }
-    a {
-      color: #00ff7f;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-    img, video {
-      max-width: 100%;
-      border-radius: 8px;
-      margin-top: 1rem;
-    }
+    body { font-family: 'Poppins', sans-serif; background: #121212; color: #fff; margin: 0; }
+    header, footer { background: #1f1f1f; text-align: center; padding: 1rem; }
+    .container { max-width: 900px; margin: auto; padding: 1rem; }
+    .profile-pics { display: flex; justify-content: center; gap: 1rem; margin-bottom: 1rem; }
+    .profile-pics img { width: 200px; border-radius: 10px; border: 2px solid #00ff7f; }
+    .bio { background: #1e1e1e; padding: 1rem; border-radius: 12px; margin-bottom: 1.5rem; }
+    .game-card { background: #222; padding: 1rem; margin: 0.5rem 0; border-left: 5px solid #00ff7f; border-radius: 6px; }
+    a { color: #00ff7f; text-decoration: none; }
+    .game-card:hover { background-color: #2e2e2e; }
+    input, button { padding: 0.5rem; width: 100%; margin-top: 0.5rem; }
+    input { background: #2a2a2a; color: white; border: none; border-radius: 6px; }
+    button { background: #00ff7f; color: #121212; font-weight: bold; border: none; border-radius: 6px; }
   </style>
 </head>
 <body>
@@ -65,13 +27,13 @@
 
 <div class="container">
   <div class="profile-pics">
-    <img src="images/ethan1.jpg" alt="Ethan Photo 1" />
-    <img src="images/ethan2.jpg" alt="Ethan Photo 2" />
+    <img src="images/ethan1.jpg" alt="Ethan Photo 1">
+    <img src="images/ethan2.jpg" alt="Ethan Photo 2">
   </div>
   <div class="bio">
-    <p>Ethan is a dedicated student-athlete playing for NCFC HSFV 2008 Gold and Fuquay Varina High School. He started soccer at 6 and now excels as a versatile defender and attacker. Jersey #10, Class of 2027.</p>
+    <p>Ethan is a student-athlete playing for NCFC HSFV 2008 Gold and Fuquay Varina High School. He started at age 6 and is a dynamic Right Back, Center Back, and Striker. Class of 2027.</p>
   </div>
-  <h2>Game Highlights</h2>
+<h2>2024-2025 Season</h2>
 <div class="game-card"><a href="games/2025-04-25.html">⚽ 2025/04/25 - NCFC HSFV 2008 Gold vs CVFC Juventus</a></div>
 <div class="game-card"><a href="games/2025-04-13a.html">⚽ 2025/04/13a - NCFC HSFV 2008 Gold vs NC Rush Triad Blue</a></div>
 <div class="game-card"><a href="games/2025-04-13b.html">⚽ 2025/04/13b - NCFC HSFV 2008 Gold vs Fayetteville Fury NXT 2008B</a></div>
@@ -95,4 +57,17 @@
 <div class="game-card"><a href="games/2024-12-14.html">⚽ 2024/12/14 - NCFC HSFV 2008 Gold vs NCFC 08 White North</a></div>
 <div class="game-card"><a href="games/2024-12-13.html">⚽ 2024/12/13 - NCFC HSFV 2008 Gold vs NCFC 08 White South</a></div>
 <div class="game-card"><a href="games/2024-12-06.html">⚽ 2024/12/06 - NCFC HSFV 2008 Gold vs 2008 Gold South</a></div>
-</div><footer><p>&copy; 2025 Ethan F.</p></footer></body></html>
+
+<div class="bio">
+  <h3>Manually Add a New Game</h3>
+  <form>
+    <input type="text" placeholder="Game Date (YYYY-MM-DD)">
+    <input type="text" placeholder="Opponent Name">
+    <button type="submit">Add Game</button>
+  </form>
+  <p><em>Note: Use the helper script to generate game pages manually.</em></p>
+</div>
+</div>
+<footer><p>&copy; 2025 Ethan F. Soccer Highlights</p></footer>
+</body>
+</html>
