@@ -19,7 +19,45 @@
     input { background: #2a2a2a; color: white; border: none; border-radius: 6px; }
     button { background: #00ff7f; color: #121212; font-weight: bold; border: none; border-radius: 6px; }
   </style>
+
+  <style>
+    .season-toggle {
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      font-size: 1.2em;
+      color: #00ff7f;
+      margin-top: 2rem;
+    }
+    .season-toggle:hover {
+      text-decoration: underline;
+    }
+    .season-content {
+      margin-left: 0;
+    }
+    .game-card {
+      background-color: #222;
+      padding: 1rem;
+      margin: 0.5rem 0;
+      border-left: 5px solid #00ff7f;
+      border-radius: 6px;
+    }
+  </style>
+  <script>
+    function toggleSeason(id, arrowId) {
+      const section = document.getElementById(id);
+      const arrow = document.getElementById(arrowId);
+      if (section.style.display === "none") {
+        section.style.display = "block";
+        arrow.innerText = "▼";
+      } else {
+        section.style.display = "none";
+        arrow.innerText = "▶";
+      }
+    }
+  </script>
 </head>
+
 <body>
 <header>
   <h1>Ethan F. | Soccer Highlights</h1>
@@ -33,7 +71,8 @@
   <div class="bio">
     <p>Ethan is a student-athlete playing for NCFC HSFV 2008 Gold and Fuquay Varina High School. He started at age 6 and is a dynamic Right Back, Center Back, and Striker. Class of 2027.</p>
   </div>
-<h2>2024-2025 Season NCFC</h2>
+<div class="season-toggle" onclick="toggleSeason('ncfc', 'arrow-ncfc')"><span id="arrow-ncfc">▼</span>&nbsp;2024–2025 Season NCFC</div>
+<div class="season-content" id="ncfc">
 <div class="game-card"><a href="games/2025-05-11b.html">⚽ 2025/05/11b - NCFC 2008 Gold South vs 08 (17U) HCSA United</a></div>
 <div class="game-card"><a href="games/2025-05-11a.html">⚽ 2025/05/11a - NCFC 2008 Gold South vs 08 (17U) LRFC White</a></div>
 <div class="game-card"><a href="games/2025-05-10.html">⚽ 2025/05/10 - NCFC 2008 Gold South vs 08 (17U) CSA Charlotte King</a></div>
@@ -60,7 +99,10 @@
 <div class="game-card"><a href="games/2024-12-14.html">⚽ 2024/12/14 - NCFC HSFV 2008 Gold vs NCFC 08 White North</a></div>
 <div class="game-card"><a href="games/2024-12-13.html">⚽ 2024/12/13 - NCFC HSFV 2008 Gold vs NCFC 08 White South</a></div>
 <div class="game-card"><a href="games/2024-12-06.html">⚽ 2024/12/06 - NCFC HSFV 2008 Gold vs 2008 Gold South</a></div>
-<h2>2024-2025 Season Fuquay Varina Bengals JV</h2>
+  </div>
+  
+<div class="season-toggle" onclick="toggleSeason('bengals', 'arrow-bengals')"><span id="arrow-bengals">▼</span>&nbsp;2024–2025 Season Fuquay Varina Bengals JV</div>
+<div class="season-content" id="bengals">
 <div class="game-card"><a href="games/2024-10-30.html">⚽ 2024/10/30 - FV Bengals JV vs South Garner High School JV</a></div>
 <div class="game-card"><a href="games/2024-10-28.html">⚽ 2024/10/28 - FV Bengals JV vs Willow Spring High School JV</a></div>
 <div class="game-card"><a href="games/2024-10-23.html">⚽ 2024/10/23 - FV Bengals JV vs Clayton High School JV</a></div>
@@ -92,6 +134,8 @@
     <button type="submit">Add Game</button>
   </form>
   <p><em>Note: Use the helper script to generate game pages manually.</em></p>
+</div>
+</div>
 </div>
 </div>
 <footer><p>&copy; 2025 Ethan F. Soccer Highlights</p></footer>
