@@ -3,60 +3,45 @@
 <head>
   <meta charset="UTF-8" />
   <title>2025/02/07 - NCFC HSFV 2008 Gold vs 2008 Gold South</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
   <style>
-    body {
-      margin: 0;
-      font-family: 'Poppins', sans-serif;
-      background: #121212;
-      color: #fff;
-    }
-    header, footer {
-      background: #1f1f1f;
-      text-align: center;
-      padding: 1rem;
-    }
-    .container {
-      max-width: 900px;
-      margin: auto;
-      padding: 1rem;
-    }
-    .profile-pics {
-      display: flex;
-      justify-content: center;
-      gap: 1rem;
-    }
-    .profile-pics img {
-      width: 200px;
-      border-radius: 12px;
-      border: 2px solid #00ff7f;
-    }
-    .bio {
-      background: #1e1e1e;
-      padding: 1rem;
-      border-radius: 12px;
-      margin: 1rem 0;
-    }
-    .game-card {
-      background: #222;
-      padding: 1rem;
-      margin: 0.5rem 0;
-      border-left: 5px solid #00ff7f;
-      border-radius: 6px;
-    }
-    a {
-      color: #00ff7f;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-    img, video {
-      max-width: 100%;
-      border-radius: 8px;
-      margin-top: 1rem;
-    }
-  </style>
+    body { font-family: 'Poppins', sans-serif; background: #121212; color: #fff; margin: 0; }
+    header, footer { background: #1f1f1f; text-align: center; padding: 1rem; }
+    .container { max-width: 900px; margin: auto; padding: 1rem; }
+    .profile-pics { display: flex; justify-content: center; gap: 1rem; margin-bottom: 1rem; }
+    .profile-pics img { width: 200px; border-radius: 10px; border: 2px solid #00ff7f; }
+    .bio { background: #1e1e1e; padding: 1rem; border-radius: 12px; margin-bottom: 1.5rem; }
+    .game-card { background: #222; padding: 1rem; margin: 0.5rem 0; border-left: 5px solid #00ff7f; border-radius: 6px; }
+    a { color: #00ff7f; text-decoration: none; }
+    .game-card:hover { background-color: #2e2e2e; }
+    input, button { padding: 0.5rem; width: 100%; margin-top: 0.5rem; }
+    input { background: #2a2a2a; color: white; border: none; border-radius: 6px; }
+    button { background: #00ff7f; color: #121212; font-weight: bold; border: none; border-radius: 6px; }
+  
+.scoreboard .score-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.4rem;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+.scoreboard .team {
+  font-weight: bold;
+}
+.scoreboard .score {
+  background: #00ff7f;
+  color: #000;
+  padding: 0.3em 0.6em;
+  border-radius: 6px;
+}
+.scoreboard .vs {
+  color: #bbb;
+  font-weight: 600;
+}
+
+</style>
 </head>
 <body>
 <header>
@@ -66,15 +51,31 @@
 <div class="container">
   <h2>2025/02/07 - NCFC HSFV 2008 Gold vs 2008 Gold South</h2>
   <div class="bio">
-    <p><strong>Game Summary:</strong> Add your recap here...</p>
+    <p><strong>Game Summary:</strong> Add your recap here.</p>
+  
+  <div class="bio scoreboard">
+    <h3>Final Score</h3>
+    <div class="score-box">
+      <div class="team">Your Team</div>
+      <div class="score">0</div>
+      <div class="vs">vs</div>
+      <div class="score">0</div>
+      <div class="team">Opponent Team</div>
+    </div>
   </div>
-  <h3>Photos</h3>
-  <img src="../images/sample-photo.jpg" alt="Sample Photo" />
-  <h3>Videos</h3>
-  <video controls>
-    <source src="../videos/sample-video.mp4" type="video/mp4" />
-    Your browser does not support the video tag.
-  </video>
+
+  <div class="bio">
+    <h3>Photos</h3>
+    <img src="../images/sample.jpg" alt="Game photo">
+  </div>
+  <div class="bio">
+    <h3>Videos</h3>
+    <video controls>
+      <source src="../videos/sample.mp4" type="video/mp4" />
+    </video>
+  </div>
   <p><a href="../index.html">← Back to Home</a></p>
 </div>
-<footer><p>&copy; 2025 Ethan F.</p></footer></body></html>
+<footer><p>&copy; 2025 Ethan F. Soccer Highlights</p></footer>
+</body>
+</html>

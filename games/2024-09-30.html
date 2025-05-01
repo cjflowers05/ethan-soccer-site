@@ -18,7 +18,30 @@
     input, button { padding: 0.5rem; width: 100%; margin-top: 0.5rem; }
     input { background: #2a2a2a; color: white; border: none; border-radius: 6px; }
     button { background: #00ff7f; color: #121212; font-weight: bold; border: none; border-radius: 6px; }
-  </style>
+  
+.scoreboard .score-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.4rem;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+.scoreboard .team {
+  font-weight: bold;
+}
+.scoreboard .score {
+  background: #00ff7f;
+  color: #000;
+  padding: 0.3em 0.6em;
+  border-radius: 6px;
+}
+.scoreboard .vs {
+  color: #bbb;
+  font-weight: 600;
+}
+
+</style>
 </head>
 <body>
 <header>
@@ -29,7 +52,18 @@
   <h2>2024/09/30 - FV Bengals JV vs Clayton High School JV</h2>
   <div class="bio">
     <p><strong>Game Summary:</strong> Add your recap here.</p>
+  
+  <div class="bio scoreboard">
+    <h3>Final Score</h3>
+    <div class="score-box">
+      <div class="team">FV Bengals JV</div>
+      <div class="score">2</div>
+      <div class="vs">vs</div>
+      <div class="score">1</div>
+      <div class="team">Clayton High School JV</div>
+    </div>
   </div>
+
   <div class="bio">
     <h3>Photos</h3>
     <img src="../images/sample.jpg" alt="Game photo">
