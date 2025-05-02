@@ -19,7 +19,20 @@
     input { background: #2a2a2a; color: white; border: none; border-radius: 6px; }
     button { background: #00ff7f; color: #121212; font-weight: bold; border: none; border-radius: 6px; }
   </style>
-
+    <style>
+    body { font-family: 'Poppins', sans-serif; background: #121212; color: #fff; margin: 0; }
+    header, footer { background: #1f1f1f; text-align: center; padding: 1rem; }
+    .container { max-width: 900px; margin: auto; padding: 1rem; }
+    .profile-pics { display: flex; justify-content: center; gap: 1rem; margin-bottom: 1rem; }
+    .profile-pics img { width: 200px; border-radius: 10px; border: 2px solid #00ff7f; }
+    .bio { background: #1e1e1e; padding: 1rem; border-radius: 12px; margin-bottom: 1.5rem; }
+    .game-card { background: #222; padding: 1rem; margin: 0.5rem 0; border-left: 5px solid #00ff7f; border-radius: 6px; }
+    a { color: #00ff7f; text-decoration: none; }
+    .game-card:hover { background-color: #2e2e2e; }
+    input, button { padding: 0.5rem; width: 100%; margin-top: 0.5rem; }
+    input { background: #2a2a2a; color: white; border: none; border-radius: 6px; }
+    button { background: #00ff7f; color: #121212; font-weight: bold; border: none; border-radius: 6px; }
+  </style>
   <style>
     .season-toggle {
       cursor: pointer;
@@ -58,8 +71,43 @@
   </script>
 </head>
 
+</head>
 <body>
 <header>
+<div class="container">
+  <section class="profile-highlight">
+    <div class="profile-header">
+      <img src="images/ethan-profile.jpg" alt="Ethan F." class="profile-photo">
+      <div class="profile-details">
+        <h2>Ethan Flowers</h2>
+        <p><strong>Jersey #22 (FVHS) #10 (NCFC)</strong> | Class of 2027</p>
+        <p>Right Back / Center Back / Striker</p>
+        <p>Fuquay Varina High School & North Carolina Football Club</p>
+        <p>Age: 16 | Started Playing: Age 6</p>
+        <p>📍Holly Springs, North Carolina</p>
+		<p>Contact: ethkapeeth7@icloud.com / 928.232.0379</p>
+		<p>Parent Contact: Cody Flowers: c.j.flowers05@gmail.com / 928.499.4169</p>
+		<p>Parent Contact: Davalene Flowers: davaleneflowers@gmail.com / 928.202.0075</p>
+		<p>Please contact us for evaluations, tryouts & invites, as well as discussion of your program!</p>
+      </div>
+    </div>
+    <div class="quick-stats">
+      <h3>Quick Stats</h3>
+      <ul>
+        <li>⚽ - Goals</li>
+        <li>🎯 - Assists</li>
+        <li>🏆 Right Back - Center Back - Striker - 2024 - 2025</li>
+        <li>🎓 4.0 GPA</li>
+      </ul>
+    </div>
+
+    <div class="featured-video">
+      <h3>🎥 Featured Highlight Video</h3>
+      <iframe width="100%" height="315" src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
+        title="Ethan Soccer Highlights" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </section>
+</div>
   <h1>Ethan F. | Soccer Highlights</h1>
 </header>
 
@@ -69,13 +117,10 @@
     <img src="images/ethan2.jpg" alt="Ethan Photo 2">
   </div>
   <div class="bio">
-    <p>Ethan is a student-athlete playing for NCFC HSFV 2008 Gold and Fuquay Varina High School. He started at age 6 and is a dynamic Right Back, Center Back, and Striker. Class of 2027.</p>
+    <p>Ethan is a student-athlete playing for NCFC HSFV 2008 Gold and Fuquay Varina High School. He started playing soccer at age 6 and is a dynamic player on the field able to play both offense and defense. Primarily Ethan plays in the Right-back position. Currently Ethan has aspirations of playing at the next levels of available soccer. Ethan has played at the JV with aspirations to play Varsity this next year and Club Classic level with aspirations to play ECNL for the next few seasons. Prior to high school and club Ethan played at the Junior High level and on Classic seasonal teams. Ethan also maintains his academics as he currently has a 4.0 weighted GPA and is in the Class of 2027.</p>
   </div>
 <div class="season-toggle" onclick="toggleSeason('ncfc', 'arrow-ncfc')"><span id="arrow-ncfc">▼</span>&nbsp;2024–2025 Season NCFC</div>
 <div class="season-content" id="ncfc">
-<div class="game-card"><a href="games/2025-05-11b.html">⚽ 2025/05/11b - NCFC 2008 Gold South vs 08 (17U) HCSA United</a></div>
-<div class="game-card"><a href="games/2025-05-11a.html">⚽ 2025/05/11a - NCFC 2008 Gold South vs 08 (17U) LRFC White</a></div>
-<div class="game-card"><a href="games/2025-05-10.html">⚽ 2025/05/10 - NCFC 2008 Gold South vs 08 (17U) CSA Charlotte King</a></div>
 <div class="game-card"><a href="games/2025-04-25.html">⚽ 2025/04/25 - NCFC HSFV 2008 Gold vs CVFC Juventus</a></div>
 <div class="game-card"><a href="games/2025-04-13a.html">⚽ 2025/04/13a - NCFC HSFV 2008 Gold vs NC Rush Triad Blue</a></div>
 <div class="game-card"><a href="games/2025-04-13b.html">⚽ 2025/04/13b - NCFC HSFV 2008 Gold vs Fayetteville Fury NXT 2008B</a></div>
@@ -99,8 +144,8 @@
 <div class="game-card"><a href="games/2024-12-14.html">⚽ 2024/12/14 - NCFC HSFV 2008 Gold vs NCFC 08 White North</a></div>
 <div class="game-card"><a href="games/2024-12-13.html">⚽ 2024/12/13 - NCFC HSFV 2008 Gold vs NCFC 08 White South</a></div>
 <div class="game-card"><a href="games/2024-12-06.html">⚽ 2024/12/06 - NCFC HSFV 2008 Gold vs 2008 Gold South</a></div>
-  </div>
-  
+ </div>
+
 <div class="season-toggle" onclick="toggleSeason('bengals', 'arrow-bengals')"><span id="arrow-bengals">▼</span>&nbsp;2024–2025 Season Fuquay Varina Bengals JV</div>
 <div class="season-content" id="bengals">
 <div class="game-card"><a href="games/2024-10-30.html">🐯 2024/10/30 - FV Bengals JV vs South Garner High School JV</a></div>
@@ -136,8 +181,6 @@
   <p><em>Note: Use the helper script to generate game pages manually.</em></p>
 </div>
 </div>
-</div>
-</div>
-<footer><p>&copy; 2025 Ethan F. Soccer Highlights</p></footer>
+<footer><p>&copy; 2025 Ethan F. Soccer Recruting</p></footer>
 </body>
 </html>
